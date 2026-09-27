@@ -6,22 +6,22 @@
 
 The ecosystem consists of four main modules that work in harmony:
 
-### 1. 📱 [Automation Companion (Android App)](../Users/Guru/AndroidStudioProjects/AutomationCompanion/README.md)
+### 1. 📱 [Automation Companion (Android App)](https://github.com/Autonion/Automation-Companion/blob/master/README.md)
 The brain and primary interface of the ecosystem. It is an offline-first, cloud-enhanced Android application that empowers users to create powerful automations natively on their phone.
 * **Key Features:** Omni-Chatbot with Langchain and RAG (supporting both local SLMs and Cloud APIs), Gesture Recording & Playback, Flow Automation, Screen Understanding via ML Kit, Semantic Automation, and Hardware Remote capabilities.
 * **Role:** Acts as the central command hub, processing natural language requests via its hybrid AI Engine (Local LLM or Cloud API) and routing them either to local Android execution or to the Desktop Agent.
 
-### 2. 🖥️ [Autonion-Agent (Desktop Agent)](Autonion-Agent/README.md)
+### 2. 🖥️ [Autonion-Agent (Desktop Agent)](https://github.com/Autonion/Autonion-Agent/blob/main/README.md)
 A Flutter-based desktop application serving as the communication hub for your desktop environment.
 * **Key Features:** Zero-config mDNS discovery, local WebSocket Server bridge, bi-directional clipboard synchronization, Python-based native OS automation, and intelligent task routing.
 * **Role:** Receives agentic action requests from the Android app. It intelligently routes web-related tasks to the browser extension and native desktop tasks to its embedded Python backend.
 
-### 3. 🌐 [Autonion-Extension (Desktop Browser Extension)](Autonion-Extension/README.md)
+### 3. 🌐 [Autonion-Extension (Desktop Browser Extension)](https://github.com/Autonion/Autonion-Extension/blob/master/README.md)
 An AI-powered browser automation extension for Chromium-based desktop browsers.
 * **Key Features:** AI-driven DOM execution, seamless syncing with the Autonion ecosystem, and dedicated content scripts for interacting with LLM interfaces like ChatGPT and Gemini.
 * **Role:** Executes the semantic automation plans inside the browser DOM (e.g., clicking, typing, navigating) as requested by the Autonion-Agent.
 
-### 4. 📱🌐 [Autonion-Android-Extension (Mobile Browser Extension)](Autonion-Android-Extension/README.md)
+### 4. 📱🌐 [Autonion-Android-Extension (Mobile Browser Extension)](https://github.com/Autonion/Autonion-Android-Extension/blob/master/README.md)
 A Lemur Browser companion extension for Android devices.
 * **Key Features:** Semantic DOM snapshots extraction, local WebSocket relay, and LLM-driven execution within the mobile browser.
 * **Role:** Acts as a bridge on the Android device itself to allow the Automation Companion app to execute complex web interactions within the mobile browser.
